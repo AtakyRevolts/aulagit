@@ -7,10 +7,4 @@ int main(){
 	return 0;
 }
 
-int fatorial(int n){
-	if(n == 0){
-		return 1;
-	} else {
-		return n*fatorial(n-1);
-	}
-}
+int fatorial(int n){ return n == 0 ? 1 : n--*fatorial(n); }
